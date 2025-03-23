@@ -1,0 +1,83 @@
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Prática de Seletores</title>
+    <style>
+        * {
+            font-family: Arial, sans-serif;
+        }
+        .cabecalho {
+            font-size: 34px;
+        }
+        .rodape {
+            font-size: 14px;
+            background-color: gray;
+        }
+        main {
+            font-size: 18px;
+        }
+        #last-content {
+            font-weight: bold;
+            text-decoration: underline;
+        }
+        .container * {
+            color: blue;
+        }
+        .section2 li {
+            background-color: green;
+        }
+        .menu > * {
+            color: red;
+        }
+        .menu > ul > li {
+            color: blue;
+        }
+        h1 ~ p {
+            color: green;
+        }
+        h2 + p {
+            color: blue;
+        }
+    </style>
+</head>
+<body>
+    <header class="cabecalho">
+        <h1>Bem-vindo ao Meu Site</h1>
+    </header>
+    <main>
+        <p>Este é o primeiro parágrafo do conteúdo principal.</p>
+        <p>Este é o segundo parágrafo do conteúdo principal.</p>
+    </main>
+    <div class="container">
+        <section class="section1">
+            <p>Parágrafo 1 da primeira seção.</p>
+            <p>Parágrafo 2 da primeira seção.</p>
+            <p>Parágrafo 3 da primeira seção.</p>
+        </section>
+        <section class="section2">
+            <ul>
+                <li>Item 1</li>
+                <li>Item 2</li>
+                <li>Item 3</li>
+            </ul>
+        </section>
+    </div>
+    <div class="menu">
+        <ul>
+            <li>Item A</li>
+            <li>Item B</li>
+            <li>Item C</li>
+        </ul>
+        <p>Este é um parágrafo dentro do menu.</p>
+    </div>
+    <h1>Título 1</h1>
+    <p>Parágrafo 1</p>
+    <h2>Título 2</h2>
+    <p>Parágrafo 2</p>
+    <footer class="rodape">
+        <p>Informações sobre o site e contato.</p>
+        <p id="last-content">Todos os direitos reservados.</p>
+    </footer>
+</body>
+</html>
